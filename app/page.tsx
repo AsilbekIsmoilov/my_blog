@@ -16,7 +16,7 @@ const snippets = [
 ];
 
 const logs = [
-  "[ OK ] https://iamasilbekismoilov.uz is opened !",
+  "[ OK ] https://my-blog-alpha-kohl.vercel.app is opened !",
   "[ OK ] terminal is running ... ",
   "[INFO] loading details...",
   "[INFO] site is ready to work !",
