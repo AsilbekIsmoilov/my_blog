@@ -32,34 +32,41 @@ export default function Home() {
             <strong>currently i am not listening to anything.</strong>
             <h4>check out some sections out there:</h4>
 
-            <div className="categories">
+<div className="categories">
 
-              <div className="card" onClick={() => router.push("/about")}>
-                <span className="card-title">about me</span>
-                <span className="card-desc">who i am</span>
-              </div>
+  <div className="service-card" onClick={() => router.push("/about")}>
+    <span className="service-name">core.service</span>
+    <span className="service-desc">who i am</span>
+    <span className="service-status online"></span>
+  </div>
 
-              <div className="card" onClick={() => router.push("/music")}>
-                <span className="card-title">music</span>
-                <span className="card-desc">what i listen</span>
-              </div>
+  <div className="service-card" onClick={() => router.push("/music")}>
+    <span className="service-name">media.stream</span>
+    <span className="service-desc">what i listen</span>
+    <span className="service-status idle"></span>
+  </div>
 
-              <div className="card" onClick={() => router.push("/projects")}>
-                <span className="card-title">projects</span>
-                <span className="card-desc">my work</span>
-              </div>
+  <div className="service-card" onClick={() => router.push("/projects")}>
+    <span className="service-name">build.pipeline</span>
+    <span className="service-desc">my work</span>
+    <span className="service-status online"></span>
+  </div>
 
-              <div className="card" onClick={() => router.push("/videos")}>
-                <span className="card-title">videos</span>
-                <span className="card-desc">content</span>
-              </div>
+  <div className="service-card" onClick={() => router.push("/videos")}>
+    <span className="service-name">content.node</span>
+    <span className="service-desc">videos</span>
+    <span className="service-status processing"></span>
+  </div>
 
-<div
-  className="card"
-  onClick={() => window.open("https://t.me/imbackendeveloper", "_blank")}>
-  <span className="card-title">telegram</span>
-  <span className="card-desc">@imbackendeveloper</span>
-</div>
+  <div
+    className="service-card"
+    onClick={() => window.open("https://t.me/imbackendeveloper", "_blank")}
+  >
+    <span className="service-name">external.api</span>
+    <span className="service-desc">@imbackendeveloper</span>
+    <span className="service-status external"></span>
+  </div>
+
 
             </div>
 
