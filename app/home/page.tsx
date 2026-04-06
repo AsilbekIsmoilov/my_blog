@@ -34,38 +34,39 @@ export default function Home() {
 
 <div className="categories">
 
-  <div className="service-card" onClick={() => router.push("/about")}>
-    <span className="service-name">core.service</span>
-    <span className="service-desc">who i am</span>
-    <span className="service-status online"></span>
+  <div className="explore-card" onClick={() => router.push("/about")}>
+    <span className="emoji">👀</span>
+    <span className="title">about me</span>
+    <span className="desc">who am i really?</span>
   </div>
 
-  <div className="service-card" onClick={() => router.push("/music")}>
-    <span className="service-name">media.stream</span>
-    <span className="service-desc">what i listen</span>
-    <span className="service-status idle"></span>
+  <div className="explore-card" onClick={() => router.push("/music")}>
+    <span className="emoji">🎧</span>
+    <span className="title">my vibe</span>
+    <span className="desc">what i listen to</span>
   </div>
 
-  <div className="service-card" onClick={() => router.push("/projects")}>
-    <span className="service-name">build.pipeline</span>
-    <span className="service-desc">my work</span>
-    <span className="service-status online"></span>
+  <div className="explore-card" onClick={() => router.push("/projects")}>
+    <span className="emoji">🚀</span>
+    <span className="title">what i built</span>
+    <span className="desc">projects & experiments</span>
   </div>
 
-  <div className="service-card" onClick={() => router.push("/videos")}>
-    <span className="service-name">content.node</span>
-    <span className="service-desc">videos</span>
-    <span className="service-status processing"></span>
+  <div className="explore-card" onClick={() => router.push("/videos")}>
+    <span className="emoji">🎬</span>
+    <span className="title">watch stuff</span>
+    <span className="desc">videos & content</span>
   </div>
 
   <div
-    className="service-card"
+    className="explore-card"
     onClick={() => window.open("https://t.me/imbackendeveloper", "_blank")}
   >
-    <span className="service-name">external.api</span>
-    <span className="service-desc">@imbackendeveloper</span>
-    <span className="service-status external"></span>
+    <span className="emoji">💬</span>
+    <span className="title">let’s talk</span>
+    <span className="desc">@imbackendeveloper</span>
   </div>
+
 
 
             </div>
