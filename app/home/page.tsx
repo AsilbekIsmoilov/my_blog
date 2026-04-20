@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import DotaStats from "@/app/components/DotaStats";
 
 export default function Home() {
   const router = useRouter();
@@ -30,6 +31,7 @@ export default function Home() {
       />
     </div>
   </div>
+
   <div className="right">
             <h2>hello $guest. welcome to my website</h2>
             <strong>currently i am not listening to anything.</strong>
@@ -83,7 +85,9 @@ export default function Home() {
           loading="lazy"
         />
       </div>
+      <DotaStats />
     </div>
+
 
           </div>
 
