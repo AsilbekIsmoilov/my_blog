@@ -65,11 +65,11 @@ export default function Home() {
 
   <div
     className="explore-card"
-    onClick={() => window.open("https://t.me/imbackendeveloper", "_blank")}
+    onClick={() => window.open("https://t.me/thebackenddev", "_blank")}
   >
     <span className="emoji">💬</span>
-    <span className="title">let’s talk</span>
-    <span className="desc">@imbackendeveloper</span>
+    <span className="title">my telegram</span>
+    <span className="desc">@thebackenddev</span>
   </div>
             </div>
       <div className="mobile-player">
