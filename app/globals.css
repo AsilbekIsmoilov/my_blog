@@ -14,13 +14,6 @@ body {
   background-size: 60px 60px;
 }
 
-.container {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .background-wrapper {
   position: fixed;
   width: 100vw;
@@ -239,16 +232,14 @@ main {
 
 
 .macbook {
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-
-  margin: 0 auto;
-
+  width: 80%;
+  height: 80%;
   background: #f9f5d7;
+  border: 1px solid rgba(0,0,0,0.2);
   border-radius: 16px;
-  box-shadow: 0 0 80px rgba(0,0,0,0.8);
 
+
+  box-shadow: 0 0 80px rgba(0,0,0,0.8);
   display: flex;
   flex-direction: column;
 }
@@ -588,9 +579,7 @@ main {
 }
 
 .about-card {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 500px;
   background: #f9f5d7;
   padding: 30px;
   border-radius: 16px;
@@ -626,11 +615,8 @@ p a:hover {
 
 
 @media (max-width: 768px) {
-  .container,
-  .macbook,
   .about-card {
-    max-width: 100%;
-    padding: 16px;
+    padding: 20px;
     border-radius: 14px;
   }
 
