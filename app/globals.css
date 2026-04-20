@@ -289,18 +289,16 @@ main {
   }
 }
 
-/* LEFT */
 .left {
   flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* MUHIM */
   align-items: center;
+  justify-content: center;
+  gap: 12px; /* spacing */
 }
 
-.left img {
-  width: 250px;
-  border-radius: 12px;
-}
+
 
 /* RIGHT */
 .right {
@@ -352,9 +350,8 @@ main {
 
 
 .profile-video {
-  width: 260px;
+  width: 130px;
   border-radius: 16px;
-  box-shadow: 0 0 40px rgba(0,0,0,0.7);
   object-fit: cover;
   transition: 0.3s;
 }
@@ -641,4 +638,14 @@ p a:hover {
 
 .about-card a:hover {
   background: rgba(34, 197, 94, 0.1);
+}
+
+
+
+.spotify-embed {
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
