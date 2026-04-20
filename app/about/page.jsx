@@ -33,10 +33,14 @@ export default function AboutPage() {
             <h2>about me</h2>
 
             <p>my name is asilbek. im from uzbekistan, where i was born and raised. i enjoy music a lot,</p>
-            <p>
-  its something i cant imagine my day without. i also love playing football and computer games (
-  <a href="https://iccup.com/dota/gamingprofile/ASYLSMELY">
-    iccup
+<p>
+  it’s something i can’t imagine my day without. i also love playing football
+  and computer games (
+  <a
+    href="https://iccup.com/dota/gamingprofile/ASYLSMELY"
+    target="_blank"
+  >
+    warcraft 3
   </a>
   , dota 2).
 </p>
