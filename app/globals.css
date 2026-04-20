@@ -26,6 +26,8 @@ body {
 main {
   position: relative;
   z-index: 10;
+  height: 100dvh;
+  overflow: hidden;
 }
 
 .code {
@@ -230,6 +232,14 @@ main {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .home-wrapper {
+    height: 100dvh;
+    align-items: flex-start;
+    padding: 12px 0;
+  }
+}
+
 
 .macbook {
   width: 80%;
@@ -237,17 +247,18 @@ main {
   background: #f9f5d7;
   border: 1px solid rgba(0,0,0,0.2);
   border-radius: 16px;
-
-
   box-shadow: 0 0 80px rgba(0,0,0,0.8);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
   .macbook {
     width: 95%;
-    height: auto;
+    height: calc(100dvh - 24px);
+    max-height: calc(100dvh - 24px);
   }
 }
 
@@ -265,39 +276,57 @@ main {
   }
 }
 
-/* HEADER */
 .mac-header {
   padding: 12px;
   border-bottom: 1px solid #1e293b;
   display: flex;
   gap: 8px;
+  flex-shrink: 0;
 }
 
-/* BODY */
+@media (max-width: 768px) {
+  .mac-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #f9f5d7;
+  }
+}
+
 .mac-body {
   flex: 1;
   display: flex;
   padding: 30px;
   gap: 40px;
+  min-height: 0;
 }
 
 @media (max-width: 768px) {
   .mac-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
     flex-direction: column;
     padding: 20px;
     gap: 20px;
+    padding-bottom: 120px;
   }
 }
 
 .left {
   flex: 1;
   display: flex;
-  flex-direction: column; /* MUHIM */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px; /* spacing */
+  gap: 12px;
 }
 
+@media (max-width: 768px) {
+  .left {
+    justify-content: flex-start;
+  }
+}
 
 
 /* RIGHT */
@@ -640,12 +669,31 @@ p a:hover {
   background: rgba(34, 197, 94, 0.1);
 }
 
-
-
 .spotify-embed {
   width: 350px;
   border-radius: 16px;
   overflow: hidden;
 
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+
+
+.desktop-player {
+  display: block;
+}
+
+.mobile-player {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-player {
+    display: none;
+  }
+
+  .mobile-player {
+    display: block;
+    margin-top: 20px;
+  }
 }

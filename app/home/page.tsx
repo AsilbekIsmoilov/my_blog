@@ -16,21 +16,21 @@ export default function Home() {
 
         <div className="mac-body">
 
-<div className="left">
-<div className="spotify-embed">
-  <iframe
-    src="https://open.spotify.com/embed/playlist/4LwdFSj7TnQsPCJNc9a6D3?utm_source=generator"
-    width="100%"
-    height="352"
-    style={{ borderRadius: "12px" }}
-    frameBorder="0"
-    allowFullScreen
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy"
-  />
-</div>
-</div>
-          <div className="right">
+  <div className="left desktop-player">
+    <div className="spotify-embed">
+      <iframe
+        src="https://open.spotify.com/embed/playlist/4LwdFSj7TnQsPCJNc9a6D3"
+        width="100%"
+        height="352"
+        style={{ borderRadius: "12px" }}
+        frameBorder="0"
+        allowFullScreen
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      />
+    </div>
+  </div>
+  <div className="right">
             <h2>hello $guest. welcome to my website</h2>
             <strong>currently i am not listening to anything.</strong>
             <h4>check out some sections out there:</h4>
@@ -69,10 +69,21 @@ export default function Home() {
     <span className="title">let’s talk</span>
     <span className="desc">@imbackendeveloper</span>
   </div>
-
-
-
             </div>
+      <div className="mobile-player">
+      <div className="spotify-embed">
+        <iframe
+          src="https://open.spotify.com/embed/playlist/4LwdFSj7TnQsPCJNc9a6D3"
+          width="100%"
+          height="352"
+          style={{ borderRadius: "12px" }}
+          frameBorder="0"
+          allowFullScreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        />
+      </div>
+    </div>
 
           </div>
 
